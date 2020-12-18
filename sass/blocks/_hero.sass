@@ -1,0 +1,57 @@
+.hero
+  &__wrapper
+    width: 1280px
+    margin: auto
+    padding: 62px 0 54px 0
+    background: url("../img/header-bg.jpg") no-repeat
+    border-radius: 8px
+    background-size: cover
+    overflow: hidden
+  &__container
+    width: 1066px
+    margin: auto
+    padding-right: 420px
+  &__title
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    line-height: 68px
+    letter-spacing: 0.2px
+    margin: 0
+    margin-bottom: 28px
+  &__text
+    margin-bottom: 53px
+    @include section-text
+
+  &__button
+    border-radius: 8px
+    padding: 15px 40px
+    margin-bottom: 47px
+    @include button
+.subtitle
+  @include subtitle-text
+
+.advantages
+  display: flex
+  &__block
+    display: flex
+    align-items: center
+    margin-right: 31px
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.2px
+  &__icon
+    display: inline-block
+    margin-right: 8px
+    padding: 7px
+    border: 0.75px solid #1565D8
+    border-radius: 12px
+    width: 36px
+    height: 36px
+  &__img
+    width: 21px
+    height: 21px
