@@ -1,22 +1,23 @@
-@media ( max-width: 1200px  )
+@media ( max-width: 1200px )
   .container
     max-width: 960px
   .hero
-    &__wrapper
-      width: 970px
+    //&__wrapper
+      //width: 1072px
+      //min-width: 98%
     &__container
-      width: 900px
-@media ( max-width: 992px  )
+      max-width: 858px
+@media ( max-width: 992px )
   .container
-    max-width: 728px
+    max-width: 648px
   .header
+    padding: 26px 0 48px 0
     &__menu
       &--mobile
         &--hidden
           display: none
         &--visible
           &--active
-            border: 1px solid #fa037f
             position: absolute
             top: 58px
             left: 0
@@ -25,6 +26,9 @@
             display: flex
             flex-direction: column
             align-items: center
+            background-color: $light
+            z-index: 10
+            overflow: auto
     &__button
       display: block
       width: 24px
@@ -54,9 +58,9 @@
         background-color: #3A4C66
         transition: 0.2s
       &::before
-        transform: translateY(-5px)
+        transform: translateY(-7px)
       &::after
-        transform: translateY(5px)
+        transform: translateY(7px)
       &--active
         height: 0
         &::before
@@ -66,3 +70,96 @@
   .hero
     &__wrapper
       width: 728px
+      padding: 36px 0
+      background: #E8EAE9 url("../img/header-bg_2.jpg") no-repeat 55px center
+      background-size: cover
+    &__container
+      max-width: 674px
+    &__title
+      font-size: 48px
+      line-height: 60px
+    &__text
+      font-size: 18px
+      line-height: 32px
+    &__button
+      margin-bottom: 40px
+  .title
+    max-width: 407px
+    min-height: 384px
+    margin-bottom: 36px
+  .advantages
+    &__block
+      margin-right: 21px
+
+@media  ( max-width: 767px )
+  .container
+    max-width: 85%
+  .header
+    padding: 18px 0 43px 0
+  .hero
+    &__wrapper
+      width: 100%
+      padding-top: 380px
+    &__container
+      align-items: center
+      max-width: 85%
+    &__title
+      text-align: center
+    &__text
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+    &__button
+      font-size: 16px
+      line-height: 22px
+      padding: 13px 49px
+      width: 95%
+      margin-bottom: 20px
+
+  .title
+    align-items: center
+    max-width: 100%
+    min-width: 280px
+    min-height: 324px
+    margin-bottom: 24px
+  .advantages
+    justify-content: center
+    flex-wrap: wrap
+    &__block
+      margin-right: 15px
+      margin-bottom: 18px
+
+    &__icon
+      border: 0.5px solid #1565D8
+      border-radius: 8px
+      width: 24px
+      height: 24px
+    &__img
+      width: 13px
+      height: 13px
+
+@media ( max-width: 567px )
+  .container
+    max-width: 85%
+  .hero
+    &__subtitle
+      max-width: 196px
+      padding: 2px 26px
+@media ( max-width: 480px )
+  .container
+    max-width: 85%
+  .hero
+    &__wrapper
+      background: #E8EAE9 url("../img/header-bg_min.jpg") no-repeat center top
+      background-size: cover
+    &__title
+      font-size: 32px
+      line-height: 40px
+  .advantages
+    &__block
+      margin-right: 12px
+      margin-bottom: 18px
+      letter-spacing: 0.1px
+      &:nth-child(2)
+        margin-right: 0
+        flex-basis: 40%
