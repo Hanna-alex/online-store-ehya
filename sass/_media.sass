@@ -2,9 +2,9 @@
   .container
     max-width: 960px
   .hero
-    //&__wrapper
-      //width: 1072px
-      //min-width: 98%
+    &__wrapper
+      width: 100%
+      //background-position-x: -50%
     &__container
       max-width: 858px
   .collection
@@ -28,16 +28,17 @@
         &--visible
           &--active
             position: absolute
-            top: 58px
-            left: 0
-            right: 0
-            bottom: 0
+            top: -5px
+            right: -12px
+            width: 304px
             display: flex
             flex-direction: column
-            align-items: center
+            align-items: flex-start
+            padding: 32px 19px 23px 28px
             background-color: $light
             z-index: 10
             overflow: auto
+
     &__button
       display: block
       width: 24px
@@ -45,6 +46,16 @@
       border: none
       background-color: transparent
       outline: none
+  .mobile-menu
+    &__item
+      margin-bottom: 20px
+      &:nth-of-type(1)
+        margin-top: 0
+
+    &__button
+      min-width: 100%
+      min-height: 40px
+      padding: 7px
   .button
     position: relative
     &__line
@@ -55,7 +66,7 @@
       transform: translate(-50%, -50%)
       width: 22px
       height: 2px
-      background: #3A4C66
+      background: $primery
       border-radius: 5px
       &::before, &::after
         content: ''
@@ -64,7 +75,7 @@
         width: 22px
         height: 2px
         border-radius: 5px
-        background-color: #3A4C66
+        background-color: $primery
         transition: 0.2s
       &::before
         transform: translateY(-7px)
@@ -72,6 +83,7 @@
         transform: translateY(7px)
       &--active
         height: 0
+        z-index: 11
         &::before
           transform: rotate(45deg)
         &::after
@@ -127,6 +139,7 @@
     padding: 18px 0 43px 0
   .hero
     &__wrapper
+      background: #E8EAE9 url("../img/header-bg_min.jpg") no-repeat center top
       width: 100%
       padding-top: 380px
       padding-bottom: 20px
@@ -158,9 +171,9 @@
     &__block
       margin-right: 15px
       margin-bottom: 18px
-
     &__icon
-      border: 0.5px solid #1565D8
+      align-items: start
+      border-radius: 0.5px
       border-radius: 8px
       width: 24px
       height: 24px
@@ -198,7 +211,7 @@
     max-width: 85%
   .hero
     &__wrapper
-      background: #E8EAE9 url("../img/header-bg_min.jpg") no-repeat center top
+
       background-size: cover
     &__title
       font-size: 32px
@@ -222,7 +235,7 @@
         height: 300px
     &__two-img
       min-height: 97px
-    &__text      
+    &__text
       font-size: 16px
       line-height: 28px
       text-align: center
@@ -235,6 +248,7 @@
     text-align: center
     margin-bottom: 20px
 @media ( max-width: 380px )
+
   .collection
     &__text
       width: 280px

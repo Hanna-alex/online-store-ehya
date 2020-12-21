@@ -1,6 +1,7 @@
 .header
   padding: 23px 0 62px 0
   &__wrapper
+    position: relative
     display: flex
     justify-content: space-between
     align-items: center
@@ -13,8 +14,8 @@
     align-items: center
     &--mobile
       &--visible
-        display: none   
-        
+        display: none
+
   &__button
     display: none
 
@@ -37,6 +38,7 @@
     margin-left: 30px
     padding: 12px
     border: 2px solid #1565D8
+    background-color: $light
     filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
     border-radius: 8px
     font-style: normal
@@ -51,5 +53,3 @@
       margin: 10px 0
     &__button
       margin-left: 0
-
-

@@ -59,6 +59,15 @@ img {
      object-fit: cover;
 }
 
+a:hover {
+  color: #36B37E;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 2px 7px  #36B37E;
+          box-shadow: 0 2px 7px  #36B37E;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -407,6 +416,7 @@ template {
 }
 
 .header__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,6 +481,7 @@ template {
   margin-left: 30px;
   padding: 12px;
   border: 2px solid #1565D8;
+  background-color: #FFFFFF;
   -webkit-filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
           filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
   border-radius: 8px;
@@ -495,10 +506,9 @@ template {
 .hero__wrapper {
   position: relative;
   width: 1280px;
-  max-width: 100%;
   margin: auto;
   padding: 60px 0 50px 0;
-  background: #E8EAE9 url("../img/header-bg.jpg") no-repeat;
+  background: #E8EAE9 url("../img/header-bg.jpg") no-repeat center top;
   background-size: cover;
   border-radius: 8px;
   background-size: auto;
@@ -598,7 +608,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 8px;
-  border: 0.75px solid #1565D8;
+  border: 0.75px solid #becfe6;
   border-radius: 12px;
   width: 36px;
   height: 36px;
@@ -632,10 +642,6 @@ template {
 .collection__container {
   max-width: 1140px;
   margin: auto;
-}
-
-.collection__container {
-  width: 672px;
 }
 
 .collection__wrapper {
@@ -745,6 +751,9 @@ template {
   .container {
     max-width: 960px;
   }
+  .hero__wrapper {
+    width: 100%;
+  }
   .hero__container {
     max-width: 858px;
   }
@@ -775,10 +784,9 @@ template {
   }
   .header__menu--mobile--visible--active {
     position: absolute;
-    top: 58px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: -5px;
+    right: -12px;
+    width: 304px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -786,9 +794,10 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 32px 19px 23px 28px;
     background-color: #FFFFFF;
     z-index: 10;
     overflow: auto;
@@ -800,6 +809,17 @@ template {
     border: none;
     background-color: transparent;
     outline: none;
+  }
+  .mobile-menu__item {
+    margin-bottom: 20px;
+  }
+  .mobile-menu__item:nth-of-type(1) {
+    margin-top: 0;
+  }
+  .mobile-menu__button {
+    min-width: 100%;
+    min-height: 40px;
+    padding: 7px;
   }
   .button {
     position: relative;
@@ -813,7 +833,7 @@ template {
             transform: translate(-50%, -50%);
     width: 22px;
     height: 2px;
-    background: #3A4C66;
+    background: #183B56;
     border-radius: 5px;
   }
   .button__line::before, .button__line::after {
@@ -823,7 +843,7 @@ template {
     width: 22px;
     height: 2px;
     border-radius: 5px;
-    background-color: #3A4C66;
+    background-color: #183B56;
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
@@ -837,6 +857,7 @@ template {
   }
   .button__line--active {
     height: 0;
+    z-index: 11;
   }
   .button__line--active::before {
     -webkit-transform: rotate(45deg);
@@ -911,6 +932,7 @@ template {
     padding: 18px 0 43px 0;
   }
   .hero__wrapper {
+    background: #E8EAE9 url("../img/header-bg_min.jpg") no-repeat center top;
     width: 100%;
     padding-top: 380px;
     padding-bottom: 20px;
@@ -957,7 +979,10 @@ template {
     margin-bottom: 18px;
   }
   .advantages__icon {
-    border: 0.5px solid #1565D8;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    border-radius: 0.5px;
     border-radius: 8px;
     width: 24px;
     height: 24px;
@@ -1010,7 +1035,6 @@ template {
     max-width: 85%;
   }
   .hero__wrapper {
-    background: #E8EAE9 url("../img/header-bg_min.jpg") no-repeat center top;
     background-size: cover;
   }
   .hero__title {
