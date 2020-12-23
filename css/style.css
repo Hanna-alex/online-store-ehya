@@ -68,6 +68,46 @@ button:hover {
           box-shadow: 0 2px 7px  #36B37E;
 }
 
+#email-error {
+  position: absolute;
+  top: 1px;
+  left: 20px;
+  color: red;
+  font-size: 14px;
+}
+
+.thanks__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thanks__title {
+  margin-bottom: 20px;
+}
+
+.thanks__button {
+  margin-top: 30px;
+  padding: 11px 20px;
+  background: #183B56;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1110,6 +1150,82 @@ template {
   font-size: 16px;
   line-height: 22px;
   margin-top: 12px;
+}
+
+.subscription {
+  padding: 100px 0;
+  background-color: #1565D8;
+  color: #FFFFFF;
+}
+
+.subscription__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscription__wrapper-title {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+.subscription__title {
+  margin-bottom: 14px;
+}
+
+.subscription__text {
+  width: 436px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.subscription__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 5px;
+  padding: 11px;
+  background: #183B56;
+  border: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 177px;
+}
+
+.subscription__input {
+  width: 447px;
+  height: 56px;
+  padding: 17px 187px 17px 44px;
+  border: 1px solid #C3CAD9;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form {
+  position: relative;
+  outline: none;
+  fill: #183B56;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 28px;
 }
 
 @media (max-width: 1200px) {
