@@ -4,7 +4,6 @@
   .hero
     &__wrapper
       width: 100%
-      //background-position-x: -50%
     &__container
       max-width: 858px
   .collection
@@ -16,6 +15,13 @@
       width: 290px
     &__info
       flex-basis: 100%
+  .trending
+    &__card
+      width: 225px
+  .stories
+    &__container
+      max-width: 970px
+
 @media ( max-width: 992px )
   .container
     max-width: 648px
@@ -113,7 +119,7 @@
     &__block
       margin-right: 21px
   .collection
-    padding: 80px 0
+    padding: 80px 0 60px 0
     width: 100%
     &__container
       max-width: 672px
@@ -131,18 +137,76 @@
         height: 490px
     &__text
       margin-bottom: 22px
+  a:hover
+    display: none
+  button:hover
+    display: none
+  .trending
+    padding: 15px 0
+    &__top
+      flex-direction: column
+      margin-bottom: 56px
+    &__title
+      margin-bottom: 30px
+    &__cards
+      padding: 0 20px
+    &__card
+      width: 280px
+      margin-bottom: 50px
+    &__info
+      &:hover
+        display: none
+  .reviews
+    padding: 21px 0  64px 0
+    &__slider
+      width: 630px
+      height: 420px
+    &__icon
+      margin-bottom: 15px
+    &__text
+      height: 210px
+  .stories
+    &__container
+      max-width: 728px
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 90px 0
+    &__info
+      justify-content: center
+      width: 567px
+    &__subtitle
+      margin-bottom: 20px
+    &__title
+      margin-bottom: 20px
+    &__text
+      text-align: center
+      margin-bottom: 38px
+    &__button
+      margin-bottom: 36px
+    &-slider
+      width: 672px
+      &__img
+        width: 322px
+        height: 317px
 
 @media  ( max-width: 767px )
   .container
-    max-width: 85%
+    max-width: 90%
   .header
     padding: 18px 0 43px 0
+    &__wrapper
+      max-width: 97%
+    &__logo
+      margin-left: 7px
+
   .hero
     &__wrapper
       background: #E8EAE9 url("../img/header-bg_min.jpg") no-repeat center top
       width: 100%
       padding-top: 380px
       padding-bottom: 20px
+      border-radius: 0
     &__container
       align-items: center
       max-width: 85%
@@ -165,6 +229,11 @@
     min-width: 280px
     min-height: 324px
     margin-bottom: 24px
+  .section__title
+    font-size: 28px
+    line-height: 36px
+    text-align: center
+    margin-bottom: 20px
   .advantages
     justify-content: center
     flex-wrap: wrap
@@ -198,17 +267,83 @@
       width: 100%
       min-height: 100%
       margin-top: 14px
+  .trending
+    &__cards
+      padding: 0
+    &__card
+      flex-basis: 48%
+    &__img
+      height: 400px
+  .filters
+    font-size: 16px
+    line-height: 22px
+  .reviews
+    padding: 29px 0 48px 0
+    &__slider
+      width: 94%
+      height: 560px
+    &__icon
+      width: 70px
+      height: 81px
+      margin-bottom: 0px
+    &__text
+      height: 360px
+      font-size: 18px
+      line-height: 36px
+      letter-spacing: 0.12px
+      margin-bottom: 23px
+  .stories
+    &__container
+      max-width: 85%
+      padding: 58px 0
+    &__info
+      width: 99%
+    &__subtitle
+      max-width: 102px
+      padding: 2px 12px
+      min-height: 24px
+    &__title
+      flex-basis: 100%
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      &-hide
+        display: none
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__button
+      width: 48px
+      height: 48px
+      margin-bottom: 25px
+      &--pre
+        margin-right: 18px
+
+    &-slider
+      width: 100%
+      &__wrapper
+        margin-bottom: -21px
+      &__item
+        flex-direction: column
+        margin-bottom: 44px
+      &__img
+        width: 98%
+        height: 277px
+      &__info
+        width: 100%
+      &__text
+        font-size: 20px
+        line-height: 24px
 
 @media ( max-width: 567px )
-  .container
-    max-width: 85%
   .hero
     &__subtitle
       max-width: 196px
       padding: 2px 26px
+  .trending
+    &__img
+      height: 280px
 @media ( max-width: 480px )
-  .container
-    max-width: 85%
   .hero
     &__wrapper
 
@@ -225,10 +360,9 @@
         margin-right: 0
         flex-basis: 40%
   .collection
-    padding: 62px 0 100px 0
+    padding: 62px 0 121px 0
     &__gallery
       min-height: 100%
-
     &__img
       height: 97px
       &--heigh
@@ -242,14 +376,42 @@
       margin-bottom: 0
     &__button
       display: none
-  .section__title
-    font-size: 28px
-    line-height: 36px
-    text-align: center
-    margin-bottom: 20px
+
+  .trending
+    &__top
+      margin-bottom: 35px
+    &__img
+      height: 170px
+      margin-bottom: 16px
+    &__text
+      font-size: 17px
+      line-height: 20px
+    &__title
+      margin-bottom: 25px
+    &__card
+      margin-bottom: 20px
+  .card
+    &__title
+      font-size: 16px
+      line-height: 20px
+  .price
+    justify-content: flex-start
+    padding: 0
+    &__teg
+      font-size: 14px
+      line-height: 24px
+      margin-right: 9px
+    &__icon
+      width: 14px
+      height: 14px
+  .filters
+    &__item
+      &:nth-of-type(2)
+        margin: 0 7px
+
 @media ( max-width: 380px )
 
   .collection
-    &__text
+    &__info
       width: 280px
       margin: auto

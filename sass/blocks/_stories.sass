@@ -1,0 +1,83 @@
+.stories
+  &__container
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    max-width: 1150px
+    margin: 0 auto
+    padding: 130px 0 140px
+    border-top: 1px solid #E5EAF4
+  &__info
+    display: flex
+    flex-wrap: wrap
+    width: 400px
+  &__subtitle
+    max-width: 102px
+    min-height: 32px
+    padding: 6px 16px
+    margin-top: -12px
+    margin-bottom: 25px
+    @include subtitle-text
+  &__title
+    margin-bottom: 28px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    margin-bottom: 50px
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 56px
+    height: 56px
+    border: 2px solid #959EAD
+    box-sizing: border-box
+    border-radius: 2000px
+    fill: #959EAD
+    &--pre
+      margin-right: 22px
+    &__icon
+      width: 14px
+      height: 18px
+    &:hover
+      border: 2px solid #183B56
+      fill: #183B56
+  &-slider
+    margin: 0
+    width: 662px
+    &__item
+      display: flex
+      justify-content: space-between     
+    &__img
+      width: 312px
+      height: 317px
+      border-radius: 8px 8px 0px 0px
+      overflow: hidden
+      position: relative
+    &__info
+      position: relative
+      width: 312px
+      max-height: 178px
+      background: #FAFDFF
+      padding: 20px
+      padding-right: 32px
+      margin-top: -22px
+      margin-left: 10px
+    &__text
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      margin-bottom: 20px
+    &__link
+      text-decoration: none
+      color: #1565D8
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      margin-top: 12px
