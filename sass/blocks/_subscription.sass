@@ -15,13 +15,28 @@
     font-weight: normal
     font-size: 18px
     line-height: 32px
+  &__form
+    position: relative
+  &__input
+    width: 447px
+    height: 56px
+    border: 1px solid #C3CAD9
+    border-radius: 8px
+    padding: 17px 187px 17px 44px
+    fill: #183B56
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
   &__button
     position: absolute
     top: 50%
     transform: translateY(-50%)
     right: 5px
+    min-width: 177px
+    height: 47px
     padding: 11px
-    background: #183B56
+    background-color: #183B56
     border: none
     border-radius: 4px
     font-style: normal
@@ -30,23 +45,11 @@
     line-height: 25px
     color: $light
     text-align: center
-    width: 177px
-  &__input
-    width: 447px
-    height: 56px
-    padding: 17px 187px 17px 44px
-    border: 1px solid #C3CAD9
-    border-radius: 8px
-    outline: none
-    
+
 .form
-  position: relative
-  outline: none
-  fill: #183B56
   &__icon
     position: absolute
-    top: 50%
+    top: 15px
     left: 20px
-    transform: translateY(-50%)
     width: 16px
     height: 28px
