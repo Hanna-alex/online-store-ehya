@@ -1,40 +1,49 @@
 .trending
-  padding: 25px 0
+  padding: 0
   &__top
     display: flex
     justify-content: space-between
-    align-items: center
-    margin-bottom: 52px
+    min-height: 60px
+    margin: 0 auto
+    margin-bottom: 48px
+    width: 1135px
+  &__title
+    line-height: 48px
   &__cards
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    width: 1135px
+    margin: 0 auto
+    padding-left: 5px
   &__card
     width: 260px
-    margin-bottom: 53px
+    margin-bottom: 50px
+    border-radius: 8px
     &--hide
       display: none
-      
   &__info
     display: flex
     flex-direction: column
-    justify-content: center
     align-items: center
+    padding-top: 125px
     &:hover
       box-shadow: 0 2px 7px  #36B37E
-  &__img    
+  &__img
     height: 350px
     margin-bottom: 20px
     border-radius: 8px
     overflow: hidden
-     object-fit: cover
+    object-fit: cover
     background: #1565D8
   &__link
     text-decoration: none
+    fill: #1565D8
+
   &__icon
     width: 28px
     height: 28px
-    margin-bottom: 25px
+    margin-bottom: 26px
   &__text
     font-family: HK Grotesk
     font-style: normal
@@ -68,18 +77,22 @@
   &__icon
     display: inline-block
     width: 23px
-    height: 24px
+    height: 32px
+    padding-top: 5px
+
 .filters
+  align-self: center
+  display: flex
+  justify-content: space-between
   font-style: normal
   font-weight: normal
   font-size: 18px
   line-height: 25px
+  min-width: 285px
   &__item
     text-decoration: none
     color: inherit
     cursor: pointer
-    &:nth-of-type(2)
-      margin: 0 38px
     &--active
       font-weight: bold
       color: $primery

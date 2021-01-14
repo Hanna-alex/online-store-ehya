@@ -9,13 +9,19 @@
   .collection
     &__container
       max-width: 960px
+
     &__gallery
       min-width: 610px
+      margin-right: 25px
     &__img
       width: 290px
     &__info
       flex-basis: 100%
   .trending
+    &__top
+      width: 956px
+    &__cards
+      width: 956px
     &__card
       width: 225px
   .stories
@@ -27,11 +33,17 @@
       &--first
         width: 253px
 
-@media ( max-width: 992px )
+@media ( max-width: 991px )
   .container
     max-width: 648px
   .header
-    padding: 26px 0 48px 0
+    background-color: #fff
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 100
+    padding: 26px 0 26px 0
     &__menu
       &--mobile
         &--hidden
@@ -100,17 +112,20 @@
         &::after
           transform: rotate(-45deg)
   .hero
+    margin-top: 87px
     &__wrapper
       width: 728px
       padding: 36px 0
-      background: #E8EAE9 url("../img/header-bg_2.jpg") no-repeat 55px center
-
+      background: #E8EAE9 url("../img/header-bg_2.jpg") no-repeat right center
       background-size: cover
     &__container
-      max-width: 674px
+      max-width: 673px
+    &__subtitle
+      margin-bottom: 18px
     &__title
       font-size: 48px
       line-height: 60px
+      margin-bottom: 26px
     &__text
       font-size: 18px
       line-height: 32px
@@ -130,6 +145,8 @@
       max-width: 672px
     &__wrapper
       flex-wrap: wrap
+    &__title
+      margin-top: 0
     &__gallery
       margin-right: 0
       margin-bottom: 34px
@@ -147,22 +164,26 @@
   button:hover
     display: none
   .trending
-    padding: 15px 0
+    padding: 22px 0
     &__top
       flex-direction: column
+      justify-content: center
       margin-bottom: 56px
+      width: 100%
     &__title
-      margin-bottom: 30px
+      margin-bottom: 38px
+      text-align: center
     &__cards
+      width: 100%
       padding: 0 20px
     &__card
       width: 280px
-      margin-bottom: 50px
+      margin-bottom: 48px
     &__info
       &:hover
         display: none
   .reviews
-    padding: 21px 0  64px 0
+    padding: 17px 0  64px 0
     &__slider
       width: 630px
       height: 420px
@@ -177,7 +198,7 @@
       flex-direction: column
       justify-content: center
       align-items: center
-      padding: 90px 0 0 0
+      padding: 90px 0 1px 0
     &__info
       justify-content: center
       width: 567px
@@ -190,11 +211,17 @@
       margin-bottom: 38px
     &__button
       margin-bottom: 36px
+      &:hover
+        fill: #959EAD
+        border-color: #959EAD
+    &__slider
+      margin-right: 8px
     &-slider
       width: 672px
       &__img
         width: 322px
         height: 317px
+
   .subscription
     padding-top: 67px
     padding-bottom: 80px
@@ -204,7 +231,6 @@
       &-title
         margin-bottom: 55px
     &__title
-      text-align: center
       margin-bottom: 20px
     &__text
       text-align: center
@@ -215,6 +241,7 @@
     &__lists
       flex-wrap: wrap
       justify-content: space-between
+      max-width: 358px
     &__block
       margin-right: 0
       margin-bottom: 24px
@@ -225,7 +252,7 @@
   .container
     max-width: 90%
   .header
-    padding: 18px 0 43px 0
+    padding: 18px 0 18px 0
     &__wrapper
       max-width: 97%
     &__logo
@@ -233,7 +260,7 @@
 
   .hero
     &__wrapper
-      background: #E8EAE9 url("../img/header-bg_min.jpg") no-repeat center top
+      background-position:
       width: 100%
       padding-top: 380px
       padding-bottom: 20px
@@ -243,6 +270,7 @@
       max-width: 85%
     &__title
       text-align: center
+      margin-bottom: 23px
     &__text
       font-size: 16px
       line-height: 28px
@@ -252,7 +280,7 @@
       line-height: 22px
       padding: 13px 49px
       width: 95%
-      margin-bottom: 20px
+      margin-bottom: 22px
 
   .title
     align-items: center
@@ -264,11 +292,13 @@
     font-size: 28px
     line-height: 36px
     text-align: center
-    margin-bottom: 20px
+
   .advantages
+
     justify-content: center
     flex-wrap: wrap
     &__block
+      align-items: flex-start
       margin-right: 15px
       margin-bottom: 18px
     &__icon
@@ -299,6 +329,7 @@
       min-height: 100%
       margin-top: 14px
   .trending
+    padding: 22px 0 17px 0
     &__cards
       padding: 0
     &__card
@@ -309,7 +340,7 @@
     font-size: 16px
     line-height: 22px
   .reviews
-    padding: 29px 0 48px 0
+    padding: 21px 0 49px 0
     &__slider
       width: 94%
       height: 560px
@@ -323,11 +354,13 @@
       line-height: 36px
       letter-spacing: 0.12px
       margin-bottom: 23px
+      &--hiden
+        display: none
   .stories
     margin-bottom: 25px
     &__container
-      max-width: 85%
-      padding: 58px 0
+      max-width: 86%
+      padding: 59px 0 60px 0
     &__info
       width: 99%
     &__subtitle
@@ -344,6 +377,7 @@
     &__text
       font-size: 16px
       line-height: 28px
+      margin-bottom: 37px
     &__button
       width: 48px
       height: 48px
@@ -353,6 +387,7 @@
 
     &-slider
       width: 100%
+      margin-right: 4px
       &__wrapper
         margin-bottom: -21px
       &__item
@@ -363,17 +398,24 @@
         height: 277px
       &__info
         width: 100%
-        padding: 20px 10px 20px 20px
+        padding: 17px 15px 20px 20px
+        margin-top: -20px
       &__text
         font-size: 20px
         line-height: 24px
-        letter-spacing: -0.8px
+        letter-spacing: -0.2px
 
   .subscription
+    padding-top: 61px
     padding-bottom: 66px
     &__wrapper
+      justify-content: center
       &-title
-        margin-bottom: 40px
+        margin-bottom: 36px
+    &__title
+      margin-bottom: 27px
+    &__form
+      width: 97%
     &__input
       width: 100%
       height: 48px
@@ -387,9 +429,7 @@
       line-height: 28px
     &__button
       position: relative
-      top:
       left: 0
-      right: 0
       transform: translateY(0)
       min-width: 100%
   .form
@@ -397,13 +437,16 @@
       top: 10px
       transform: translateY(0)
   .footer
-    padding: 48px 0 73px 0
+    padding: 47px 0 73px 0
     &_wrapper
       flex-wrap: wrap
+    &__lists
+      margin-bottom: 35px
+      max-width: 100%
     &__block
       font-size: 14px
       line-height: 20px
-      margin-bottom: 15px
+      margin-bottom: 16px
       margin-left: 18px
       &--first
         display: flex
@@ -414,16 +457,17 @@
         margin: 0 auto
         width: 263px
     &__logo
+      margin-left: 9px
       margin-bottom: 15px
     &__text
       text-align: center
       font-size: 14px
       line-height: 24px
-      margin-bottom: 20px
+      margin-bottom: 21px
     &__item
       margin-bottom: 15px
-    &__lists
-      margin-bottom: 38px
+    &__social
+      margin-left: 10px
   .block
     &__title
       font-size: 16px
@@ -441,7 +485,7 @@
 @media ( max-width: 480px )
   .hero
     &__wrapper
-
+      background: #E8EAE9 url("../img/header-bg_min.jpg") no-repeat center top
       background-size: cover
     &__title
       font-size: 32px
@@ -449,42 +493,58 @@
   .advantages
     &__block
       margin-right: 12px
-      margin-bottom: 18px
+      margin-bottom: 16px
       letter-spacing: 0.1px
       &:nth-child(2)
         margin-right: 0
         flex-basis: 40%
   .collection
-    padding: 62px 0 121px 0
+    padding: 64px 0 56px 0
     &__gallery
       min-height: 100%
+      margin-bottom: 32px
+    &__title
+      margin-bottom: 24px
     &__img
       height: 97px
       &--heigh
         height: 300px
     &__two-img
       min-height: 97px
+    &__info
+      align-items: center
     &__text
+      padding: 0 8px
       font-size: 16px
       line-height: 28px
       text-align: center
       margin-bottom: 0
+    &__link
+      font-size: 16px
+      line-height: 28px
+      width: 225px
     &__button
       display: none
 
   .trending
     &__top
-      margin-bottom: 35px
+      margin-bottom: 36px
     &__img
       height: 170px
-      margin-bottom: 16px
+      margin-bottom: 13px
     &__text
       font-size: 17px
       line-height: 20px
     &__title
-      margin-bottom: 25px
+      margin-bottom: 28px
     &__card
-      margin-bottom: 20px
+      margin-bottom: 24px
+    &__info
+      padding-top: 44px
+    &__icon
+      width: 25px
+      height: 25px
+      margin-bottom: 16px
   .card
     &__title
       font-size: 16px
@@ -500,6 +560,7 @@
       width: 14px
       height: 14px
   .filters
+    min-width: 217px
     &__item
       &:nth-of-type(2)
         margin: 0 7px

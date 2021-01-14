@@ -16,12 +16,8 @@
     color: #5A7184
     margin-bottom: 32px
   &__icon
-    display: inline-block
-    width: 42px
-    height: 40px
-    margin-right: 2px
-    border-radius: 2000px
-    fill: #5A7184
+    width: 16px
+    height: 18px    
   &__item
     margin-bottom: 24px
   &__block
@@ -41,18 +37,19 @@
     font-size: 18px
     line-height: 25px
     margin-bottom: 31px
-
 .social
-  &__google
-    background: #f0f1f3 url(../img/google-plus.svg) no-repeat 50% 50%
-    background-size: 16px 18px
-  &__twitter
-    background: #f0f1f3 url(../img/twitter.svg) no-repeat 50% 50%
-    background-size: 16px 18px
-  &__instagram
-    background: #f0f1f3 url(../img/instagram.svg) no-repeat 50% 50%
-    background-size: 14px 18px
-  &__in
-
-    background: #f0f1f3 url(../img/in.svg) no-repeat 50% 50%
-    background-size: 14px 18px
+  display: flex
+  width: 185px
+  justify-content: space-between
+  &__link
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 42px
+    height: 40px
+    margin-right: 2px
+    border-radius: 2000px
+    background-color: #f0f1f3
+    fill: #5A7184
+    &::hover
+      fill: #36B37E

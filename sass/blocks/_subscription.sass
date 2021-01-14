@@ -1,6 +1,6 @@
 .subscription
-  padding: 100px 0
-  background-color: #1565D8
+  padding: 95px 0 100px 0
+  background: url(../img/base.jpg) center center
   color: $light
   &__wrapper
     display: flex
@@ -8,7 +8,7 @@
     &-title
       flex-basis: 55%
   &__title
-    margin-bottom: 14px
+    margin-bottom: 20px
   &__text
     width: 436px
     font-style: normal
@@ -17,6 +17,7 @@
     line-height: 32px
   &__form
     position: relative
+
   &__input
     width: 447px
     height: 56px
@@ -28,6 +29,8 @@
     font-weight: 600
     font-size: 16px
     line-height: 22px
+    &::active
+      outline: none
   &__button
     position: absolute
     top: 50%

@@ -94,6 +94,7 @@
           </div>
           <!-- /.title -->
           <button class="button hero__button">Подобрать одежду</button>
+
           <div class="advantages">
             <div class="advantages__block">
               <span class="advantages__icon">
@@ -104,7 +105,7 @@
               </span>
               <span class="advantages__text" lang="en">Онлайн оплата</span>
             </div>
-            <!-- /.advantage -->
+            <!-- /.advantages__block -->
             <div class="advantages__block">
               <span class="advantages__icon">
                 <div class="advantages__img">
@@ -161,14 +162,12 @@
               нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии.
               Используйте код EHYA20, чтобы получить 20%&nbsp;скидку.
             </p>
-            <div class="button collection__button">
-              <a href="#" class="collection__link">Посмотреть коллекцию</a>
-              <img
-                src="img/arrow-right.svg"
-                alt="стрелка влево"
-                class="button__img"
-              />
-            </div>
+            <a href="#" class="collection__link">
+              <span>Посмотреть коллекцию</span>
+              <svg class="collection__icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
           </div>
           <!-- /.collection__text -->
         </div>
@@ -196,105 +195,144 @@
         <div class="trending__cards">
           <div data-cat="soon" class="trending__card card">
             <div class="trending__img">
-              <img src="img/card_1.jpg" alt="Фото товара" />
+              <a href="#">
+                <img src="img/card_1.jpg" alt="Minimalist Style"
+              /></a>
             </div>
             <!-- /.trending__img -->
             <div class="price">
-              <h3 class="card__title" lang="en">Minimalist Style</h3>
+              <h3 class="card__title" lang="en">
+                <a href="#">Minimalist Style</a>
+              </h3>
+
               <span class="price__teg">$25.7 </span>
-              <span class="price__icon">
-                <img src="img/shopping-cart.svg" alt="корзина" />
-              </span>
+              <a href="#" class="trending__link">
+                <svg class="price__icon">
+                  <use xlink:href="img/sprite.svg#shopping-cart"></use>
+                </svg>
+              </a>
             </div>
             <!-- /.price -->
           </div>
           <!-- /.trending__card -->
+
           <div data-cat="best" class="trending__card">
             <div class="trending__img">
-              <img src="img/card_2.jpg" alt="Фото товара" />
+              <a href="#">
+                <img src="img/card_2.jpg" alt="Luxury Gown" />
+              </a>
             </div>
             <!-- /.trending__img -->
             <div class="price">
-              <h3 class="card__title" lang="en">Luxury Gown</h3>
+              <h3 class="card__title" lang="en">
+                <a href="#"> Luxury Gown</a>
+              </h3>
               <span class="price__teg">$30.6 </span>
-              <span class="price__icon">
-                <img src="img/shopping-cart.svg" alt="корзина" />
-              </span>
+              <a href="#" class="trending__link">
+                <svg class="price__icon">
+                  <use xlink:href="img/sprite.svg#shopping-cart"></use>
+                </svg>
+              </a>
             </div>
             <!-- /.price -->
           </div>
           <!-- /.trending__card -->
-          <div data-cat="soon" class="trending__card">
-            <div class="trending__img">
-              <img src="img/card_3.jpg" alt="Фото товара" />
-            </div>
-            <!-- /.trending__img -->
-            <div class="price">
-              <h3 class="card__title" lang="en">Full Coloristye</h3>
-              <span class="price__teg">$25.7 </span>
-              <span class="price__icon">
-                <img src="img/shopping-cart.svg" alt="корзина" />
-              </span>
-            </div>
-            <!-- /.price -->
-          </div>
-          <!-- /.trending__card -->
+
           <div data-cat="best" class="trending__card">
             <div class="trending__img">
-              <img src="img/card_4.jpg" alt="Фото товара" />
+              <a href="#">
+                <img src="img/card_3.jpg" alt="Full Coloristy" />
+              </a>
             </div>
             <!-- /.trending__img -->
             <div class="price">
-              <h3 class="card__title" lang="en">Pinky Winky</h3>
+              <h3 class="card__title" lang="en">
+                <a href="#"> Full Coloristy</a>
+              </h3>
+              <span class="price__teg">$25.7</span>
+              <a href="#" class="trending__link">
+                <svg class="price__icon">
+                  <use xlink:href="img/sprite.svg#shopping-cart"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- /.price -->
+          </div>
+          <!-- /.trending__card -->
+
+          <div data-cat="best" class="trending__card">
+            <div class="trending__img">
+              <a href="#"> <img src="img/card_4.jpg" alt="Pinky Winky" /></a>
+            </div>
+            <!-- /.trending__img -->
+            <div class="price">
+              <h3 class="card__title" lang="en">
+                <a href="#"> Pinky Winky</a>
+              </h3>
               <span class="price__teg">$109</span>
-              <span class="price__icon">
-                <img src="img/shopping-cart.svg" alt="корзина" />
-              </span>
+              <a href="#" class="trending__link">
+                <svg class="price__icon">
+                  <use xlink:href="img/sprite.svg#shopping-cart"></use>
+                </svg>
+              </a>
             </div>
             <!-- /.price -->
           </div>
           <!-- /.trending__card -->
+
           <div data-cat="soon" class="trending__card">
             <div class="trending__img">
-              <img src="img/card_5.jpg" alt="Фото товара" />
+              <a href="#"> <img src="img/card_5.jpg" alt="Holiday Vibes" /></a>
             </div>
             <!-- /.trending__img -->
             <div class="price">
-              <h3 class="card__title" lang="en">Holiday Vibes</h3>
+              <h3 class="card__title" lang="en">
+                <a href="#">Holiday Vibes</a>
+              </h3>
               <span class="price__teg">$51.2</span>
-              <span class="price__icon">
-                <img src="img/shopping-cart.svg" alt="корзина" />
-              </span>
+              <a href="#" class="trending__link">
+                <svg class="price__icon">
+                  <use xlink:href="img/sprite.svg#shopping-cart"></use>
+                </svg>
+              </a>
             </div>
             <!-- /.price -->
           </div>
           <!-- /.trending__card -->
+
           <div data-cat="best" class="trending__card">
             <div class="trending__img">
-              <img src="img/card_6.jpg" alt="Фото товара" />
+              <a href="#"> <img src="img/card_6.jpg" alt="Swaggie Shaggy" /></a>
             </div>
             <!-- /.trending__img -->
             <div class="price">
-              <h3 class="card__title" lang="en">Swaggie Shaggy</h3>
+              <h3 class="card__title" lang="en">
+                <a href="#">Swaggie Shaggy</a>
+              </h3>
               <span class="price__teg">$81.3</span>
-              <span class="price__icon">
-                <img src="img/shopping-cart.svg" alt="корзина" />
-              </span>
+              <a href="#" class="trending__link">
+                <svg class="price__icon">
+                  <use xlink:href="img/sprite.svg#shopping-cart"></use>
+                </svg>
+              </a>
             </div>
             <!-- /.price -->
           </div>
           <!-- /.trending__card -->
+
           <div data-cat="soon" class="trending__card">
             <div class="trending__img">
-              <img src="img/card_7.jpg" alt="Фото товара" />
+              <a href="#"> <img src="img/card_7.jpg" alt="Red Formal" /></a>
             </div>
             <!-- /.trending__img -->
             <div class="price">
-              <h3 class="card__title" lang="en">Red Formal</h3>
+              <h3 class="card__title" lang="en"><a href="#"> Red Formal</a></h3>
               <span class="price__teg">$66.8 </span>
-              <span class="price__icon">
-                <img src="img/shopping-cart.svg" alt="корзина" />
-              </span>
+              <a href="#" class="trending__link">
+                <svg class="price__icon">
+                  <use xlink:href="img/sprite.svg#shopping-cart"></use>
+                </svg>
+              </a>
             </div>
             <!-- /.price -->
           </div>
@@ -306,7 +344,7 @@
                 <span class="trending__icon">
                   <img src="img/plus.svg" alt="Плюс"
                 /></span>
-                <span class="trending__text" leng="en">
+                <span class="trending__text" lang="en">
                   Смотреть <br />больше коллекций</span
                 >
               </div>
@@ -333,8 +371,10 @@
                 Мне очень нравятся дизайн и стили, которые создает Ehya. Они
                 такие разные и новаторские. Я покупала несколько раз из
                 коллекций, и что мне нравится, это то, что они действительно
-                неподвластны времени, а качество ткани просто превосходно. Я с
-                нетерпением жду новых коллекций от сезона к сезону
+                неподвластны времени, а качество ткани просто превосходно.
+                <span class="reviews__text--hiden"
+                  >Я с нетерпением жду новых коллекций от сезона к сезону</span
+                >
               </p>
               <h3 class="reviews__title" lang="en">
                 Алисия Пума - клиент&nbsp;Fashun
@@ -499,28 +539,28 @@
               Интернет-магазин брендовой одежды&nbsp;с оплатой онлайн
             </p>
             <div class="footer__social social">
-              <a
-                href="https://www.google.com/"
-                class="footer__icon social__google"
-              >
+              <a href="https://www.google.com/" class="social__link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#google-plus"></use>
+                </svg>
               </a>
               <!-- /.footer__gogle -->
-              <a
-                href="https://twitter.com/"
-                class="footer__icon social__twitter"
-              >
+              <a href="https://twitter.com/" class="social__link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
               </a>
               <!-- /.footer__twitter -->
-              <a
-                href="https://www.instagram.com/"
-                class="footer__icon social__instagram"
-              >
+              <a href="https://www.instagram.com/" class="social__link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
               </a>
               <!-- /.footer__instagram -->
-              <a
-                href="https://ru.linkedin.com/"
-                class="footer__icon social__in"
-              >
+              <a href="https://ru.linkedin.com/" class="social__link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
               </a>
               <!-- /.footer__in -->
             </div>
