@@ -55,6 +55,7 @@ a {
 
 .button {
   cursor: pointer;
+  outline: none;
 }
 
 img {
@@ -896,18 +897,6 @@ template {
   color: #FFFFFF;
 }
 
-.card__title {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.2px;
-  margin-bottom: 3px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
 .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -921,6 +910,18 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 10px;
+}
+
+.price__title {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  margin-bottom: 3px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .price__teg {
@@ -1212,23 +1213,30 @@ template {
 
 .subscription__form {
   position: relative;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  width: 447px;
+  height: 56px;
+  outline: none;
+  fill: #183B56;
 }
 
 .subscription__input {
-  width: 447px;
+  width: 100%;
   height: 56px;
-  border: 1px solid #C3CAD9;
-  border-radius: 8px;
   padding: 17px 187px 17px 44px;
-  fill: #183B56;
+  border: 1px solid #C3CAD9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+  outline: none;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-}
-
-.subscription__input::active {
-  outline: none;
 }
 
 .subscription__button {
@@ -1400,6 +1408,10 @@ template {
   .container {
     max-width: 648px;
   }
+  a:hover {
+    color: inherit;
+    fill: inherit;
+  }
   .header {
     background-color: #fff;
     position: fixed;
@@ -1562,11 +1574,13 @@ template {
   .collection__text {
     margin-bottom: 22px;
   }
-  a:hover {
-    display: none;
+  .collection__link:hover {
+    color: #1565D8;
+    fill: #1565D8;
   }
   button:hover {
-    display: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .trending {
     padding: 22px 0;
@@ -1595,7 +1609,11 @@ template {
     margin-bottom: 48px;
   }
   .trending__info:hover {
-    display: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .trending__link:hover {
+    fill: #1565D8;
   }
   .reviews {
     padding: 17px 0  64px 0;
@@ -1672,9 +1690,13 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .subscription__wrapper-title {
     margin-bottom: 55px;
+    text-align: center;
   }
   .subscription__title {
     margin-bottom: 20px;
@@ -1702,6 +1724,9 @@ template {
   }
   .footer__block--first {
     margin-right: 30px;
+  }
+  .social__link:hover {
+    fill: #5A7184;
   }
 }
 
@@ -1936,6 +1961,7 @@ template {
   }
   .subscription__form {
     width: 97%;
+    height: 106px;
   }
   .subscription__input {
     width: 100%;
@@ -1951,11 +1977,12 @@ template {
     line-height: 28px;
   }
   .subscription__button {
-    position: relative;
-    left: 0;
+    position: static;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    min-width: 100%;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
   }
   .form__icon {
     top: 10px;

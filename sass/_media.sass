@@ -36,6 +36,9 @@
 @media ( max-width: 991px )
   .container
     max-width: 648px
+  a:hover
+    color: inherit
+    fill: inherit
   .header
     background-color: #fff
     position: fixed
@@ -159,10 +162,14 @@
         height: 490px
     &__text
       margin-bottom: 22px
-  a:hover
-    display: none
+    &__link
+      &:hover
+        color: #1565D8
+        fill: #1565D8
+
   button:hover
-    display: none
+    box-shadow: none
+
   .trending
     padding: 22px 0
     &__top
@@ -181,7 +188,10 @@
       margin-bottom: 48px
     &__info
       &:hover
-        display: none
+        box-shadow: none
+    &__link
+      &:hover
+        fill: #1565D8
   .reviews
     padding: 17px 0  64px 0
     &__slider
@@ -228,8 +238,10 @@
     &__wrapper
       flex-direction: column
       justify-content: center
+      align-items: center
       &-title
         margin-bottom: 55px
+        text-align: center
     &__title
       margin-bottom: 20px
     &__text
@@ -247,6 +259,10 @@
       margin-bottom: 24px
       &--first
         margin-right: 30px
+  .social
+    &__link
+      &:hover
+        fill: #5A7184
 
 @media  ( max-width: 767px )
   .container
@@ -416,6 +432,7 @@
       margin-bottom: 27px
     &__form
       width: 97%
+      height: 106px
     &__input
       width: 100%
       height: 48px
@@ -428,10 +445,11 @@
       font-size: 16px
       line-height: 28px
     &__button
-      position: relative
-      left: 0
+      position: static
       transform: translateY(0)
-      min-width: 100%
+      width: 100%
+      height: 48px
+      border-radius: 8px
   .form
     &__icon
       top: 10px
