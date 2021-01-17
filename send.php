@@ -26,11 +26,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'chosen_anna.999@inbox.ru'; // Логин на почте
-    $mail->Password   = 'ch963842a751'; // Пароль на почте
+    $mail->Username   =  // Логин на почте
+    $mail->Password   =  // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('chosen_anna.999@inbox.ru', 'Анна Александровна'); // Адрес самой почты и имя отправителя
+    $mail->setFrom(); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('chosen.am7@gmail.com');  
