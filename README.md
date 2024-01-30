@@ -1,6 +1,6 @@
 # online-store-ehya
 
-- https://hanna-alex.github.io/online-store-ehya/
+- https://www.anna-aleksandrovna.ru/online-store-ehya/index.html
 
 ## Используемые технологии:
 - HTML
