@@ -8,7 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
@@ -23,19 +26,19 @@
             <nav class="nav">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Главная</a>
+                  <a href="#main" class="menu__link">Главная</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Новинки</a>
+                  <a href="#new_items" class="menu__link">Новинки</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Тренды</a>
+                  <a href="#trends" class="menu__link">Тренды</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="#contact" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -52,19 +55,19 @@
             <nav class="nav">
               <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
-                  <a href="#" class="menu__link">Главная</a>
+                  <a href="#main" class="menu__link">Главная</a>
                 </li>
                 <li class="mobile-menu__item">
-                  <a href="#" class="menu__link">Новинки</a>
+                  <a href="#new_items" class="menu__link">Новинки</a>
                 </li>
                 <li class="mobile-menu__item">
-                  <a href="#" class="menu__link">Тренды</a>
+                  <a href="#trends" class="menu__link">Тренды</a>
                 </li>
                 <li class="mobile-menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="mobile-menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="#contact" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -78,7 +81,7 @@
       </div>
       <!-- /.container -->
     </header>
-    <section class="hero section">
+    <section id="main" class="hero section">
       <div class="hero__wrapper">
         <div class="hero__container">
           <div class="title">
@@ -133,7 +136,7 @@
       </div>
       <!-- /.hero-wrapper -->
     </section>
-    <section class="collection section">
+    <section id="new_items" class="collection section">
       <div class="collection__container">
         <div class="collection__wrapper">
           <div class="collection__gallery">
@@ -175,7 +178,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="trending section">
+    <section id="trends" class="trending section">
       <div class="container">
         <div class="trending__top">
           <h2 class="section__title trending__title" lang="en">Тренды</h2>
@@ -326,7 +329,9 @@
             </div>
             <!-- /.trending__img -->
             <div class="price">
-              <h3 class="price__title" lang="en"><a href="#"> Red Formal</a></h3>
+              <h3 class="price__title" lang="en">
+                <a href="#"> Red Formal</a>
+              </h3>
               <span class="price__teg">$66.8 </span>
               <a href="#" class="trending__link">
                 <svg class="price__icon">
@@ -357,10 +362,10 @@
       </div>
       <!-- /.container -->
     </section>
-    <article class="reviews section">
+    <article id="reviews" class="reviews section">
       <div class="container">
         <!-- Slider main container -->
-        <div class="swiper-container reviews-slider reviews__slider">
+        <div class="swiper swiper-container reviews-slider reviews__slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper reviews-slider__wrapper">
             <!-- Slides -->
@@ -411,8 +416,8 @@
               </h3>
             </div>
           </div>
-          <!-- swiper-wrapper -->
-          <!-- If we need pagination -->
+          <!-- swiper-wrapper reviews-slider__wrapper -->
+
           <div class="swiper-pagination"></div>
         </div>
         <!-- swiper-container reviews-slider reviews__slider -->
@@ -480,6 +485,35 @@
               </div>
             </div>
             <!-- /.swiper-slide stories-slider__item -->
+            <div class="swiper-slide stories-slider__item">
+              <div class="stories-slider__wrapper">
+                <div class="stories-slider__img">
+                  <img src="img/stories-slider_1.jpg" alt="Картинка" />
+                </div>
+                <div class="stories-slider__info">
+                  <p class="stories-slider__text" lang="en">
+                    Mix & Match Style 01:<br />
+                    повседневный и формальный стиль
+                  </p>
+                  <a href="#" class="stories-slider__link">Читать далее</a>
+                </div>
+                <!-- /.tories-slider__text -->
+              </div>
+              <!-- /.stories-slider__wrapper -->
+              <div class="stories-slider__wrapper">
+                <div class="stories-slider__img">
+                  <img src="img/stories-slider_2.jpg" alt="Картинка" />
+                </div>
+                <div class="stories-slider__info">
+                  <p class="stories-slider__text" lang="en">
+                    Лайфхак: Купите одежду Thrifft на воскресном рынке
+                  </p>
+                  <a href="#" class="stories-slider__link">Читать далее</a>
+                </div>
+                <!-- /.tories-slider__text -->
+              </div>
+            </div>
+            <!-- /.swiper-slide stories-slider__item -->
           </div>
           <!-- /.swiper-wrapper -->
         </div>
@@ -487,7 +521,7 @@
       </div>
       <!-- /.stories__container -->
     </section>
-    <section class="subscription section">
+    <section id="contact" class="subscription section">
       <div class="container">
         <div class="subscription__wrapper">
           <div class="subscription__wrapper-title">
@@ -652,11 +686,11 @@
     </footer>
 
     <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
