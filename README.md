@@ -8,3 +8,4 @@
 - JS
 - jQuery Validation Plugin
 - Бибилиотеки: swiper, PHPMailer
+- 
