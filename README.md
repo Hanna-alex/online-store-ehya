@@ -4,7 +4,7 @@
 
 ## Используемые технологии:
 - HTML
-- CSS
+- CSS / SASS
 - JS
 - jQuery Validation Plugin
 - Бибилиотеки: swiper, PHPMailer
